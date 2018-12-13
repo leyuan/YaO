@@ -72,7 +72,7 @@
       <div class="info-container">
         <div>
           <p><img src="images/1.png" alt="">会籍：白银会籍 <button class="btn btn-sm heijin-btn">黑金会员待领取</button></p>
-          <p><img src="images/2.png" alt="">姓名：邓诗颖</p>
+          <p><img src="images/2.png" alt="">姓名：<span class="user-name">邓诗颖</span></p>
           <p><img src="images/3.png" alt="">电话：13995812345</p>
           <p><img src="images/4.png" alt="">身份证号：610111255665455558</p>
         </div>
@@ -86,7 +86,11 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    <script>
+      setTimeout(() => {
+        $(".user-name")[0].textContent = 'Shiying Deng';
+      }, 3000)
+    </script>
   </body>
 
 </html>
